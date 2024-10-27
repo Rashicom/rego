@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-++ry*vy%4q2a^r5iz%tf8*ym53#+_(-&surf*7gdd#w9=%q&*n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.235.48.51']
+ALLOWED_HOSTS = ['13.235.48.51','localhost']
 
 
 # Application definition
@@ -128,3 +128,22 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static-cdn/')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# [Unit]
+# Description=gunicorn daemon
+# Requires=gunicorn.socket
+# After=network.target
+
+# [Service]
+# User=ubuntu
+# Group=www-data
+# WorkingDirectory=/home/ubuntu/rego/rego
+# ExecStart=/home/ubuntu/env/bin/gunicorn \
+#           --access-logfile - \
+#           --workers 3 \
+#           --bind unix:/run/gunicorn.sock \
+#           config.wsgi:application
+
+# [Install]
+# WantedBy=multi-user.target
