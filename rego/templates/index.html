@@ -1,0 +1,449 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rego Power Bank</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="index-page" id="mainpage">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="{% static 'new/logopng2.png' %}" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#mainpage" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#howitwork">How Its Work</a></li>
+          <li><a href="#specifi">Specification</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button type="submit">Download</button>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <!-- <img src="assets/new/cover.png" alt=""> -->
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column  align-items-start">
+          <h1 data-aos="fade-up">Power bank on the <span>go!</span></h1>
+          
+          
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>ABOUT</h3>
+            <p >
+              Welcome to Rego, the forefront of smart and fully automated power bank rental services. Our mission is to keep you connected, powered up, and on the go without the hassle of a dead battery. With our innovative network of internet-connected vending terminals, accessing a power bank has never been easier.<br>
+              At Rego, we understand the importance of staying charged in today’s fast-paced world. That’s why we’ve developed a cutting-edge system that allows you to rent power banks effortlessly. Our terminals are strategically located, ensuring that a power source is always within your reach.
+            </p>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="{% static 'new/1.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="{% static 'new/11.jpg' %}" class="img-fluid" alt="">
+                  </div>
+                  <!-- <div class="col-lg-12">
+                    <img src="assets/new/14.jpg" class="img-fluid" alt="">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+    <!-- how work -->
+ <section class="how-it-works" id="howitwork">
+  <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps-container">
+          <div class="step">
+              <img src="{% static 'new/step1.jpg' %}" alt="Step 1"> <!-- Replace 'step-1.png' with the actual image path -->
+              <h3>Step 1</h3>
+              <p>Download APP and Navigate to the nearest Rego</p>
+          </div>
+          <div class="step">
+              <img src="{% static 'new/step2.jpg' %}" alt="Step 2"> <!-- Replace 'step-2.png' with the actual image path -->
+              <h3>Step 2</h3>
+              <p>Scan the QR Code to release a power bank</p>
+          </div>
+          <div class="step">
+              <img src="{% static 'new/step3.jpg' %}" alt="Step 3"> <!-- Replace 'step-3.png' with the actual image path -->
+              <h3>Step 3</h3>
+              <p>Carry the power bank with you to charge your smart device</p>
+          </div>
+          <div class="step">
+              <img src="{% static 'new/step4.jpg' %}" alt="Step 4"> <!-- Replace 'step-4.png' with the actual image path -->
+              <h3>Step 4</h3>
+              <p>Simply drop the power bank in the nearest Rego terminal to return</p>
+          </div>
+      </div>
+  </div>
+</section>
+   
+    <!-- Specification Section -->
+    <section id="specifi" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Specifications</h2>
+        <p>Smart & Fully automated power bank rental service</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-8 d-flex align-items-center textcontent">
+
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                  <div>
+                    <h3>Rent | Charge | Return ... Anywhere</h3>
+                    <p>
+                       Smart & fully automated power bank rental service. Network of internet-connected vending terminals to dispense power banks. The terminals can easily be viewed in real time on the Rego APP. Integrated payment system for one-click renting.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- End Tab Nav -->
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="{% static 'new/4.jpg' %}" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+             <!-- End Tab Content Item -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Goals & Section -->
+    <section id="features-details" class="features-details section">
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'new/2.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex align-items-center textcontent" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Goals & Objective</h3>
+              <p>
+                At Rego, our primary goal is to ensure uninterrupted connectivity by providing a reliable and accessible power source. We aim to expand our network of vending terminals across the UAE, making it easy to rent a power bank wherever you are. We prioritize delivering a superior user experience through our intuitive app and efficient rental process, constantly innovating to meet our users' needs.
+              </p>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+          </div>
+
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-8 d-flex align-items-center order-2 order-lg-1 textcontent" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="content">
+              <h3>StayPoweredAnywhere, Anytime with Rego</h3>
+              <p>
+                Experience the ultimate convenience with Rego's seamless power bank rental service. Our intuitive system allows you to rent a power bank effortlessly from any of our numerous internet-connected vending terminals spread across the UAE. Keep your devices charged on the go, whether you're commuting, at a café, or exploring the city. Once you're done, simply return the power bank to any Rego terminal. No matter where you are, Rego ensures you stay powered up and connected, making low battery anxiety a thing of the past. Rent, charge, and return – anywhere, anytime.
+              </p>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'new/6.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Details Section -->
+
+  
+
+    
+    <!-- Pricing Section -->
+    <section id="plans" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing & Plans</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <!-- <p class="popular">Popular</p> -->
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+    <section id="Download" class="download-section">
+      <div class="container">
+          <h2>Download Now</h2>
+          <p>Get started with our seamless power bank rental service by downloading the Rego app. Experience the convenience of renting, charging, and returning power banks with just a few taps!</p>
+          <a class="btn-download" href="#Download">Download App</a>
+      </div>
+    </section>
+
+      </div>
+    
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt" ></i>
+              <h3>Address</h3>
+              <p>ARENCO OFFICES BUILDING NO:3, 6th FLOOR,
+                ROOM NO:614, DUBAI INVESTMENT PARK,
+                NEAR GREEN COMMUNITY, DUBAI, UAE</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+971-504789566</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>regochargingpointllc@gmail.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1 justify-content-center">
+
+
+          <div class="col-lg-10">
+            <form  method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+  
+    
+    
+    
+
+
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#howitwork">Services</a></li>
+            <li><a href="#specifi">Specification</a></li>
+            <li><a href="#plans">Plans</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rego</strong><span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
