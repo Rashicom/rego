@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-++ry*vy%4q2a^r5iz%tf8*ym53#+_(-&surf*7gdd#w9=%q&*n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.235.48.51','localhost']
+ALLOWED_HOSTS = ['13.235.48.51','localhost', 'regoinit.com', 'www.regoinit.com']
 
 
 # Application definition
@@ -147,3 +147,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # [Install]
 # WantedBy=multi-user.target
+
+
+# server {
+#     listen 80;
+#     server_name 13.235.48.51;
+
+#     location = /favicon.ico { access_log off; log_not_found off; }
+
+#     location /static/ {
+#         alias /home/ubuntu/rego/rego/static-cdn/;
+#     }
+
+#     location / {
+#         include proxy_params;
+#         proxy_pass http://unix:/run/gunicorn.sock;
+#     }
+# }
