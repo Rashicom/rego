@@ -337,38 +337,25 @@
 
         <div class="row gy-4 justify-content-center">
 
+          {% for prod in products %}
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h3>{{prod.plan_name}}</h3>
+              <h4><sup>$</sup>{{prod.price}}<span> / {{prod.periodicity}}</span></h4>
               <a href="#" class="cta-btn">Start a free trial</a>
               <p class="text-center small">No credit card required</p>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                
+                {% for feature in prod.features.all %}
+                  {% if feature.is_active %}
+                      <li><i class="bi bi-check"></i> <span>{{ feature.feature_description }}</span></li>
+                  {% else %}
+                      <li class="na"><i class="bi bi-x"></i> <span>{{ feature.feature_description }}</span></li>
+                  {% endif %}
+                {% endfor %}
               </ul>
             </div>
           </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <!-- <p class="popular">Popular</p> -->
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div><!-- End Pricing Item -->
-
+          {% endfor %}
 
         </div>
 
