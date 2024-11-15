@@ -10,6 +10,8 @@
     const selectHeader = document.querySelector('#header');
     // if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     selectBody.classList.add('scrolled');
+    // if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    // window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
 
   document.addEventListener('scroll', toggleScrolled);
@@ -38,6 +40,7 @@
     });
 
   });
+
 
   /**
    * Toggle mobile nav dropdowns

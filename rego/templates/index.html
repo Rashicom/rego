@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +24,7 @@
 
 </head>
 
-<body class="index-page" id="mainpage">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -36,8 +35,17 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#mainpage" class="active">Home</a></li>
+          <li><a href="/" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li class="dropdown"><a href="#"><span>Partners</span></i></a>
+            <ul>
+             
+              <li><a href="/business">Buisness</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/franchise">Franchise</a></li>
+              <!-- <li><a href="#">Advertising & Sponsorship</a></li> -->
+            </ul>
+          </li>
           <li><a href="#howitwork">How Its Work</a></li>
           <li><a href="#specifi">Specification</a></li>
           <li><a href="#plans">Plans</a></li>
@@ -229,6 +237,85 @@
           </div>
 
         </div><!-- Features Item -->
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'new/12.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex align-items-center textcontent" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>8 Slot Vending Mechine</h3>
+              <div class="container my-5">
+                <ul class="b-short__benefits customs-ul">
+                  <li>Certificates CE, RoHs, FCC,MSDS</li>
+                  <li>Display 9,8 inches</li>
+                  <li>Size (W,H,L) 26cm, 35cm, 20cm</li>
+                  <li>Safety protection electric leakage short circuit, over-current, over-voltage protection</li>
+                  <li>Average power consumption (24 hrs) 0,48 kw</li>
+                  <li>Environment temperature 0°C~45°C</li>
+                </ul>
+              </div>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+          </div>
+
+        </div><!-- Features Item -->
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-8 d-flex align-items-center order-2 order-lg-1 textcontent" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="content">
+              <h3>12 Slot Vending Mechine</h3>
+              <div class="container my-5">
+                <ul class="b-short__benefits customs-ul">
+                  <li>Certificates CE, RoHs, FCC,MSDS</li>
+                  <li>Display 9,8 inches</li>
+                  <li>Size (W,H,L) 26cm, 35cm, 20cm</li>
+                  <li>Safety protection electric leakage short circuit, over-current, over-voltage protection</li>
+                  <li>Average power consumption (24 hrs) 0,48 kw</li>
+                  <li>Environment temperature 0°C~45°C</li>
+                </ul>
+              </div>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'new/13.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- Features Item -->
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'new/14.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex align-items-center textcontent" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>24 Slot Vending Mechine</h3>
+              <div class="container my-5">
+                <ul class="b-short__benefits customs-ul">
+                  <li>Certificates CE, RoHs, FCC,MSDS</li>
+                  <li>Display 9,8 inches</li>
+                  <li>Size (W,H,L) 26cm, 35cm, 20cm</li>
+                  <li>Safety protection electric leakage short circuit, over-current, over-voltage protection</li>
+                  <li>Average power consumption (24 hrs) 0,48 kw</li>
+                  <li>Environment temperature 0°C~45°C</li>
+                </ul>
+              </div>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+          </div>
+
+        </div><!-- Features Item -->
+        
+
+         
+
+        </div><!-- Features Item -->
 
       </div>
 
@@ -297,7 +384,63 @@
     </section>
 
       </div>
-    
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Questions</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>How do I rent a power bank from Rego Point?</h3>
+                <div class="faq-content">
+                  <p>You must first download the Rego Point app, available in the App Store or Google Play. You'll need to create or log into an account, providing a valid mobile number and entering the one-time-passcode SMS sent to that number. Approach the station and type in the station number or scan the QR code to release a power bank for you to use. If you're seeking a station, explore the map in the app.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I use an Rego Point power bank?</h3>
+                <div class="faq-content">
+                  <p>Like most traditional power banks, ours come with built-in Type-C and Micro USB and iOS cables. The cables can be found in a slot at the front side of the power bank. To use, press and pull the cable out and plug it into your phone. iOS cables can charge an iPhone, iPad, and iPod, Micro USB cables can charge an Android phone, camera, GoPro, wireless headphones, etc., while Type-C cables can charge newer Android devices. You can also use your own Micro USB cable to recharge the power bank if you're not near a station.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How much does it cost to rent an Rego point power bank?</h3>
+                <div class="faq-content">
+                  <p>Our rates vary depending on agreements with partners and landlords, so please check the screen for the specific station's rate. The daily cap amount for all locations is AED 20 per 24 hours.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What payment options do you offer?</h3>
+                <div class="faq-content">
+                  <p>You can pay with your credit card after saving your card details or use Apple Pay or Google Pay.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
 
     
 
@@ -313,7 +456,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
+          <div class="col-lg-3">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt" ></i>
               <h3>Address</h3>
@@ -325,9 +468,20 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-whatsapp"></i>
+              <h3>More Info</h3>
+              <p><br></p>
+              <p><a href="https://wa.me/971504789566?text=Hello%2C%20how%20are%20you%3F">Send message </a></p>
+              <p><br> </p>
+            </div>
+          </div><!-- End Info Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
               <p>+971-504789566</p>
+              <p><br></p>
+              <p><br> </p>
             </div>
           </div><!-- End Info Item -->
 
@@ -336,6 +490,8 @@
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
               <p>regochargingpointllc@gmail.com</p>
+              <p><br></p>
+              <p><br> </p>
             </div>
           </div><!-- End Info Item -->
 
@@ -344,7 +500,7 @@
         <div class="row gy-4 mt-1 justify-content-center">
 
 
-          <div class="col-lg-10">
+          <div class="col-lg-12">
             <form  method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
               <div class="row gy-4">
 
@@ -399,7 +555,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#howitwork">Services</a></li>
             <li><a href="#specifi">Specification</a></li>
@@ -413,11 +569,19 @@
           <h4>Our Newsletter</h4>
           <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
           <form method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="newsletter-form"><input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your subscription request has been sent. Thank you!</div>
           </form>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-links">
+          <h4>More Info</h4>
+          <ul>
+            <li><a href="termsandcondition.html">Terms & Condition</a></li>
+            <li><a href="privacypolicy.html">Privacy & Policy</a></li>
+            
+          </ul>
         </div>
 
       </div>
