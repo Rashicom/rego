@@ -11,7 +11,8 @@ class Plans(models.Model):
 
     def __str__(self):
         return self.plan_name
-    
+
+
 class PlanFeatures(models.Model):
     plan = models.ForeignKey(Plans, on_delete=models.CASCADE, related_name="features")
     feature_description = models.TextField()
@@ -22,3 +23,10 @@ class PlanFeatures(models.Model):
 
     class Meta:
         ordering = ['-is_active']
+
+
+
+# question models
+class Questions(models.Model):
+    question = models.TextField()
+    answer = models.TextField()
