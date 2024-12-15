@@ -29,7 +29,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="/" class="logo d-flex align-items-center me-auto">
         <img src="{% static 'new/logopng2.png' %}" alt="">
       </a>
 
@@ -386,38 +386,15 @@
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
             <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>How do I rent a power bank from Rego Point?</h3>
+              {% for qst in questions %}
+              <div class="faq-item {% if forloop.first %}faq-active{% endif %}">
+                <h3>{{qst.question}}</h3>
                 <div class="faq-content">
-                  <p>You must first download the Rego Point app, available in the App Store or Google Play. You'll need to create or log into an account, providing a valid mobile number and entering the one-time-passcode SMS sent to that number. Approach the station and type in the station number or scan the QR code to release a power bank for you to use. If you're seeking a station, explore the map in the app.</p>
+                  <p>{{qst.answer}}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>How do I use an Rego Point power bank?</h3>
-                <div class="faq-content">
-                  <p>Like most traditional power banks, ours come with built-in Type-C and Micro USB and iOS cables. The cables can be found in a slot at the front side of the power bank. To use, press and pull the cable out and plug it into your phone. iOS cables can charge an iPhone, iPad, and iPod, Micro USB cables can charge an Android phone, camera, GoPro, wireless headphones, etc., while Type-C cables can charge newer Android devices. You can also use your own Micro USB cable to recharge the power bank if you're not near a station.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>How much does it cost to rent an Rego point power bank?</h3>
-                <div class="faq-content">
-                  <p>Our rates vary depending on agreements with partners and landlords, so please check the screen for the specific station's rate. The daily cap amount for all locations is AED 20 per 24 hours.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>What payment options do you offer?</h3>
-                <div class="faq-content">
-                  <p>You can pay with your credit card after saving your card details or use Apple Pay or Google Pay.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
+              {% endfor %}
 
             </div>
 
@@ -447,9 +424,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt" ></i>
               <h3>Address</h3>
-              <p>ARENCO OFFICES BUILDING NO:3, 6th FLOOR,
-                ROOM NO:614, DUBAI INVESTMENT PARK,
-                NEAR GREEN COMMUNITY, DUBAI, UAE</p>
+              <p>{{contact.address}}</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -466,7 +441,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+971-504789566</p>
+              <p>{{contact.mobile_number}}</p>
               <p><br></p>
               <p><br> </p>
             </div>
@@ -476,7 +451,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>regochargingpointllc@gmail.com</p>
+              <p>{{contact.email}}</p>
               <p><br></p>
               <p><br> </p>
             </div>

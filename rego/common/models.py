@@ -1,5 +1,10 @@
 from django.db import models
 
+class Contactinfo(models.Model):
+    address = models.TextField()
+    mobile_number = models.CharField(max_length=15)
+    email = models.CharField(max_length=150)
+
 # Create your models here.
 class Plans(models.Model):
     class PeriodicityChoice(models.TextChoices):

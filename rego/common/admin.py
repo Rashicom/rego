@@ -1,6 +1,9 @@
 from django.contrib import admin
-from .models import Plans, PlanFeatures, Questions
+from .models import Plans, PlanFeatures, Questions, Contactinfo
 
+@admin.register(Contactinfo)
+class ContactinfoAdmin(admin.ModelAdmin):
+    list_display = ('address', 'mobile_number', 'email')
 
 @admin.register(Plans)
 class PlansAdmin(admin.ModelAdmin):
